@@ -1,0 +1,14 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">PeículasApp</h1>
+      <p class="lead">Esta es una aplicación demo de búsqueda de películas usando la API de TheMovieDB.</p>
+    </div>
+</div>
+<div class="container">
+    <!-- <app-tarjetas [peliculas]="cartelera titulo="Peliculas en Cartelera"></app-tarjetas> -->
+    <app-tarjetas [peliculas]="cartelera|slice:0:6" titulo="Peliculas en Cartelera"></app-tarjetas>
+    <br /><br />
+    <app-tarjetas [peliculas]="populares" titulo="Peliculas más Populares"></app-tarjetas>
+    <br /><br />
+    <app-tarjetas [peliculas]="popularesKids|slice:06" titulo="Peliculas para Niños"></app-tarjetas>
+</div>

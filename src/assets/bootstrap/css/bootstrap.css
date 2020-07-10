@@ -612,6 +612,15 @@ pre code {
   margin-left: -15px;
 }
 
+.row-noMargin {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -948,6 +957,14 @@ pre code {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
+
+  /****************/
+  .col-sm-5-5 {
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  /****************/
   .col-sm-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;

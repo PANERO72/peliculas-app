@@ -1,0 +1,45 @@
+<!-- <div> -->
+    <!-- *ngFor="let item of items" -->
+    <h1>{{ titulo }}</h1>
+    <hr />
+     <div class="row animate__animated animate__fadeIn animate__fast" *ngIf="peliculas">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-md-12 div-pic-1 puntero hvr-border-fade" [routerLink]="['/pelicula', peliculas[0].id, 'home']" [ngStyle]="{'background-image': 'url(' + (peliculas[0] | imagenPelicula ) + ')'}">
+                    <p class="pic-titulo">{{ peliculas[0]. original_title }}</p>
+                </div>
+                <!-- <div class="col-md-12 div-pic-1 puntero" (click)="verPelicula(peliculas)">
+                    <img [src]="peliculas[0] | imagenPelicula" alt="Card image cap" />
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-sm-6 div-pic-2 puntero hvr-border-fade" [routerLink]="['/pelicula', peliculas[1].id, 'home']" [ngStyle]="{'background-image': 'url(' + (peliculas[1] | imagenPelicula ) + ')'}"><p class="pic-titulo">{{ peliculas[1]. original_title }}</p></div>
+                <div class="col-sm-6 div-pic-2 puntero hvr-border-fade" [routerLink]="['/pelicula', peliculas[2].id, 'home']" [ngStyle]="{'background-image': 'url(' + (peliculas[2] | imagenPelicula ) + ')'}"><p class="pic-titulo">{{ peliculas[2]. original_title }}</p></div>
+                <!-- <div class="col-sm-6 div-pic-2" (click)="verPelicula(peliculas)">
+                    <img class="card-img-top" [src]="peliculas[1] | imagenPelicula" alt="Card image cap" />
+                </div>
+                <div class="col-sm-6 div-pic-2" (click)="verPelicula(peliculas)">
+                    <img class="card-img-top" [src]="peliculas[2] | imagenPelicula" alt="Card image cap" />
+                </div> -->
+            </div>
+        </div>  
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-6 div-pic-2 puntero hvr-border-fade" [routerLink]="['/pelicula', peliculas[3].id, 'home']" [ngStyle]="{'background-image': 'url(' + (peliculas[3] | imagenPelicula ) + ')'}"><p class="pic-titulo">{{ peliculas[3]. original_title }}</p></div>
+                <div class="col-sm-6 div-pic-2 puntero hvr-border-fade" [routerLink]="['/pelicula', peliculas[4].id, 'home']" [ngStyle]="{'background-image': 'url(' + (peliculas[4] | imagenPelicula ) + ')'}"><p class="pic-titulo">{{ peliculas[4]. original_title }}</p></div>
+                <!-- <div class="col-sm-6 div-pic-2" (click)="verPelicula(peliculas)">
+                    <img class="card-img-top" [src]="peliculas[3] | imagenPelicula" alt="Card image cap" />
+                </div>
+                <div class="col-sm-6 div-pic-2" (click)="verPelicula(peliculas)">
+                    <img class="card-img-top" [src]="peliculas[4] | imagenPelicula" alt="Card image cap" />
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-12 div-pic-1 puntero hvr-border-fade" [routerLink]="['/pelicula', peliculas[5].id, 'home']" [ngStyle]="{'background-image': 'url(' + (peliculas[5] | imagenPelicula ) + ')'}"><p class="pic-titulo">{{ peliculas[5]. original_title }}</p></div>
+                <!-- <div class="col-md-12 div-pic-1" (click)="verPelicula(peliculas)">
+                    <img class="card-img-top" [src]="peliculas[5] | imagenPelicula" alt="Card image cap" />
+                </div> -->
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
